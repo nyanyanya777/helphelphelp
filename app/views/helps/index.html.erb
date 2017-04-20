@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
+
+<% if alert.present? %>
+<div class="alert alert-dismissable alert-success">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  　<p><%= alert %></p>
+  </div>
+<% end %>
+
+<div class="row">
+<% @helps.each do |help| %>
+<p><%= help.content %></p>
+<p><%= help.bill %></p>
+<p><%= link_to help.url do %></p>
+  <span>話を聞く</span>
+</di>
+<% end %>
+<% end %>
+</section>
+</div>
+</div>
