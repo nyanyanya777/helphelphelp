@@ -49,5 +49,7 @@ group :development, :test do
   gem 'kaminari'
   gem 'kaminari-bootstrap', '~> 3.0.1'
   gem 'faker'
-  gem 'rails_12factor', group: :production
+  group :production, :staging do
+  gem 'rails_12factor'
+end
 end
