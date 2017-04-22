@@ -40,10 +40,10 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  group :production, :staging do
-  gem 'rails_12factor'
-  end
+
   gem 'spring'
+end
+
   gem 'rails_autolink'
   gem 'twitter-bootstrap-rails'
   gem 'devise'
@@ -52,3 +52,4 @@ group :development, :test do
   gem 'kaminari'
   gem 'kaminari-bootstrap', '~> 3.0.1'
   gem 'faker'
+  gem 'rails_12factor', group: :production
