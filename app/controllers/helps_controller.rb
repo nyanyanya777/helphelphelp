@@ -8,8 +8,13 @@ class HelpsController < ApplicationController
  end
 
  def create
-   Help.create(helps_params)
+   @help = Help.new(helps_params)
+   @help.user_id = current_user.id
+   if @help.save
    redirect_to helps_path
+ else
+   redirect_to helps_new_path
+ end
  end
 
  def show
