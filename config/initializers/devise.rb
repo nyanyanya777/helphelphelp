@@ -8,6 +8,9 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   config.mailer_sender = 'noreply@yourdomain'
 
+  config.secret_key = '0b4a1149e09c86b4cd482df178c18b01f01503ae22f8706e444ac26159197b049d18d48f
+da3a7b8050bf82a460597a4fb794ac31a4a972f54b8562df223ff822'
+
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
 
