@@ -9,13 +9,17 @@
 <% end %>
 
 <div class="row">
+  <div class="chat-box">
+  　<div class="chat-face">
 <% @helps.each do |help| %>
-
+<p><%= profile_img(help.user) %></p>
+</br>
 <p><%= help.content %></p>
 <p><%= help.bill %></p>
 <p><%= link_to help.url do %></p>
   <span>話を聞く</span>
-</di>
+</div>
+</div>
 <% end %>
 <% end %>
 </section>

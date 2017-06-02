@@ -42,6 +42,9 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 
   gem 'spring'
+  gem 'dotenv-rails'
+  gem 'pry-rails'
+  gem 'better_errors'
 end
 
   gem 'rails_autolink'
@@ -53,3 +56,8 @@ end
   gem 'kaminari-bootstrap', '~> 3.0.1'
   gem 'faker'
   gem 'rails_12factor', group: :production
+  gem 'omniauth'
+  gem 'omniauth-twitter'
+  gem 'omniauth-facebook'
+  gem 'carrierwave'
+  gem 'rmagick'
