@@ -1,6 +1,9 @@
 class HelpsController < ApplicationController
  def index
    @helps = Help.page(params[:page])
+   respond to |format|
+    format.html
+    format.js
  end
 
  def new

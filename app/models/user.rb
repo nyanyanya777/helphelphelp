@@ -6,7 +6,8 @@ class User < ActiveRecord::Base
 
   mount_uploader :avatar, AvatarUploader
 
-  has_many :helps
+  has_many :help, dependent: :destroy
+  has_many :comments, dependent: :destroy
 
   def self.create_unique_string
     Secure.Random.uuid

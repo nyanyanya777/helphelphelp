@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %>
+  <div class="child row">
+    <div class="wrapper col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
+      <div class="help.text">
+        <p class="left"><strong>タイトル</strong></p>
+          <p class="left"><%= help.content %></p>
+          <p class="left"><% help.bill %></p>
+          <p class="right">
+          　<strong>作成時間:</strong>
+              <%= @blog.created_at.strftime("%y/%m/%d %p %l:%M") %>
+                </p>
+                </div>

@@ -1,0 +1,19 @@
+<% form_for([help.comment]) %>
+  <% if comment.error.any %>
+  <div id="error_explanation">
+    <h2><%= comment.errors.count  %>件のエラーがあります</h2>
+
+    <ul>
+      <% comment.errors.full_messages.each |do| %>
+      <li><%= msg %></li>
+      <% end %>
+      </ul>
+      </div>
+      <% end %>
+      <% f.hidden_field :help.id %>
+      <div class="field">
+        <%= f.text_field :comment, placeholder:"内容", class: "form-control" %>
+        </div>
+        <div class="action">
+        <%= f.submit　"コメントする"  %>
+        <% end %>
